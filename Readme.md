@@ -4,49 +4,58 @@ Este é um script em Python simples e funcional para baixar vídeos (`.mp4`) ou 
 
 ---
 
-# 📥 YTMS - YouTube Downloader para Termux
+# 🎵 YTMS - YouTube Downloader com yt-dlp para Termux
 
-Baixe vídeos (MP4) e músicas (MP3) do YouTube diretamente no seu Android usando Termux.
+Baixe músicas (MP3) e vídeos (MP4) do YouTube no Android via Termux usando `yt-dlp`.
 
 ---
 
-## ✅ Como usar
+## 🚀 Como usar
 
-### 1. Instale os requisitos no Termux:
+### 1. Clone o repositório
 
 ```bash
+git clone https://github.com/Marconesds1/YTMS.git
+cd YTMS
+
+2. Instale as dependências
+
 pkg update && pkg upgrade -y
-pkg install python ffmpeg wget -y
-pip install pytube
+pkg install python ffmpeg git -y
+pip install yt-dlp
 termux-setup-storage
 
-2. Baixe e execute o script:
+3. Execute o script
 
-wget https://raw.githubusercontent.com/Marconesds1/YTMS/main/YTMS.py
 python YTMS.py
 
 
 ---
 
-📁 Arquivos baixados
+📁 Onde os arquivos são salvos
 
-Os arquivos serão salvos automaticamente em:
+Os downloads vão para:
 
 /sdcard/Download
 
 
 ---
 
-📌 Atalho opcional:
+🛠️ Dica: criar um alias para facilitar
 
-Adicione um comando curto para rodar sempre que quiser:
-
-echo "alias ytms='python ~/YTMS.py'" >> ~/.bashrc
+echo "alias ytms='python ~/YTMS/YTMS.py'" >> ~/.bashrc
 source ~/.bashrc
 
-Depois basta digitar:
+Agora só digite:
 
 ytms
+
+
+---
+
+⚠️ Aviso Legal
+
+Use para conteúdo autorizado. Respeite direitos autorais.
 
 
 ---
