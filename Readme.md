@@ -4,9 +4,15 @@ Este é um script em Python simples e funcional para baixar vídeos (`.mp4`) ou 
 
 ---
 
-## 📌 Requisitos
+# 📥 YTMS - YouTube Downloader para Termux
 
-Antes de usar o script, você precisa instalar alguns pacotes no Termux:
+Baixe vídeos (MP4) e músicas (MP3) do YouTube diretamente no seu Android usando Termux.
+
+---
+
+## ✅ Como usar
+
+### 1. Instale os requisitos no Termux:
 
 ```bash
 pkg update && pkg upgrade -y
@@ -14,95 +20,39 @@ pkg install python ffmpeg wget -y
 pip install pytube
 termux-setup-storage
 
-📥 Instalação no Termux
-
-1. Instale os requisitos:
-
-pkg update && pkg upgrade -y
-pkg install python ffmpeg wget -y
-pip install pytube
-termux-setup-storage
-
-2. Baixe o script:
+2. Baixe e execute o script:
 
 wget https://raw.githubusercontent.com/Marconesds1/YTMS/main/YTMS.py
-
-3. Execute:
-
 python YTMS.py
 
 
 ---
 
-⚙️ Como funciona?
+📁 Arquivos baixados
 
-Ele irá pedir o link do vídeo do YouTube.
+Os arquivos serão salvos automaticamente em:
 
-Em seguida, pergunte se quer MP3 (áudio) ou MP4 (vídeo).
-
-O arquivo será salvo em:
-📁 /sdcard/Download
-
+/sdcard/Download
 
 
 ---
 
-🔁 Atalho opcional (com alias):
+📌 Atalho opcional:
+
+Adicione um comando curto para rodar sempre que quiser:
 
 echo "alias ytms='python ~/YTMS.py'" >> ~/.bashrc
 source ~/.bashrc
 
-Agora você pode rodar com apenas:
+Depois basta digitar:
 
 ytms
 
 
 ---
-
-📝 Sugestão de README.md
-
-Aqui está um modelo simples para colocar no seu repositório YTMS:
-
-# 🎵 YTMS - YouTube Music & Video Downloader (Termux)
-
-Baixe vídeos e músicas do YouTube diretamente no seu Android com Termux.
-
-## 🚀 Instalação no Termux
-
-```bash
-pkg update && pkg upgrade -y
-pkg install python ffmpeg wget -y
-pip install pytube
-termux-setup-storage
-wget https://raw.githubusercontent.com/Marconesds1/YTMS/main/YTMS.py
-python YTMS.py
-
-✅ Recursos
-
-🎧 Baixa áudio em MP3
-
-🎥 Baixa vídeo em MP4
-
-📁 Salva diretamente em /sdcard/Download
-
-
-📌 Atalho rápido
-
-echo "alias ytms='python ~/YTMS.py'" >> ~/.bashrc
-source ~/.bashrc
-
-Depois, basta rodar:
-
-ytms
-
-⚠️ Uso Educacional
-
-Este projeto é para fins educacionais. Respeite os direitos autorais.
 
 👨‍💻 Autor
 
 Marcones
-🔗 GitHub: @Marconesds1
-📱 Telegram: @marcones_ms
-
----
+GitHub: @Marconesds1
+Telegram: @marcones_ms
